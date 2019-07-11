@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>幼儿园体验车</title>
+    </head>
+    <body>
+        <h1>幼儿园之旅注册系统</h1>
+        <div>
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561600932276&di=d49d293e29687c23bb1f9c3695c41841&imgtype=0&src=http%3A%2F%2Fimg.itmop.com%2Fupload%2F2016-11%2F20161118145352219310.jpg" alt="车挂了" width="10%">
+        </div>
+        <form action="" name="test">
+        <span>
+            <p>请上传头像</p>
+            <input type="file" id="upload_file">
+            <p>
+            <input type="text" name="register" placeholder="用户名">
+            </p>
+            <p>
+            <input type="password" name="register" placeholder="密码">
+            </p>
+            <p>
+                <p>性别</p>
+                <input type="radio" name="sex" value="男">男
+                <input type="radio" name="sex" value="女">女
+                <input type="radio" name="sex" value="未知" disabled>未知
+                </p>
+            <p>
+                <p>爱好(可多选)</p>
+            <input type="checkbox" name="hobby" value="吃">吃
+            <input type="checkbox" name="hobby" value="喝" >喝
+            <input type="checkbox" name="hobby" value="睡" disabled>睡
+            </p>
+            <p>
+                <p>年龄</p>
+            <select name="age" id="16">
+                <option value="16">16岁</option>
+                <option value="17">17岁</option>
+                <option value="18">18岁</option>
+            </select>
+            </p>
+            <p>
+                <input type="submit" name="register" onclick="output()">
+                <input type="button" name ="test" onclick="removeall()" value="重置">
+            </p>
+        </span>
+            </form>
+        <span>
+            <a href="http://www.baidu.com">友情链接</a>
+        </span>
+        <script>
+        function output(name, sex) {
+            var name = document.getElementsByName("register")[0]
+            var sex = document.getElementsByName("sex")
+            for (var i=0; i<sex.length; i++){
+                if (sex[i].checked){
+                    fina_sex = sex[i].value
+                    console.log(sex[i].value)                           
+                }
+            }
+            window.alert("小小年纪不好好学习，上什么车？")
+            console.log(name.value)
+        }
+        function removeall(){
+            for (var i=0; i<document.querySelectorAll("input").length; i++){
+                if (document.querySelectorAll("input")[i].type == "text"){
+                    document.querySelectorAll("input")[i].value=""
+                }else if (document.querySelectorAll("input")[i].type == "checkbox"){
+                    document.querySelectorAll("input")[i].value=""
+                }
+            }
+        }
+        </script>
+    </body>
+</html>

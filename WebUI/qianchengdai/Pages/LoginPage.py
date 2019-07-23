@@ -4,9 +4,8 @@
 @Auther:grassroadsZ
 @File:LoginPage.py
 """
-from pygments.formatters import img
-from selenium.webdriver.common.by import By
 
+from selenium.webdriver.common.by import By
 from Content.base import BasePage
 
 
@@ -14,16 +13,18 @@ class Login(BasePage):
     """登陆页面"""
 
     # 元素定位表达式
-    phone_input = (By.XPATH, '//input[@name = "phone"')
-    password_input = (By.XPATH, '//input[@name = "password"')
-    v_code = (By.XPATH, '//input[@name = "vcode"')
-    v_code_img = (By.XPATH, '//img[@class ="verify-img"')
-    login_button = (By.XPATH, '//button[text()="登录"')
-    format_error_info = (By.XPATH, '//div[@class ="form-error-info"')
-    phone_password_error = (By.XPATH, '//div[@class ="layui-layer-content"')
-    login_success_info = (By.XPATH, '//a[text()="我的帐户[python10]"')
+    phone_input = (By.NAME, "phone")
+    password_input = (By.NAME, "password")
+    v_code = (By.NAME, "vcode")
+    v_code_img = (By.XPATH, '//img[@class="verify-img"')
+    login_button = (By.XPATH, "//button[@class='btn btn-special']")
+    format_error_info = (By.XPATH, '//div[@class="form-error-info"')
+    phone_password_error = (By.XPATH, '//div[@class="layui-layer-content"')
+    login_success_info = (By.XPATH, "//a[contains(text(),'[python10]')]")
+    url = 'http://120.78.128.25:8765/Index/login.html'
 
     def login(self, phone: str, password: str):
+        self.visit_url(self.url)
         self.input_user(phone)
         self.input_password(password)
         self.click_login()
@@ -39,5 +40,8 @@ class Login(BasePage):
 
     @property
     def get_login_success_info(self):
-        value = self.get_element_text(*self.login_success_info)
+        value = self.get_element_text(self.login_success_info)
         return value
+
+if __name__ == '__main__':
+    pass

@@ -4,7 +4,9 @@
 @Auther:grassroadsZ
 @File:base.py
 """
+
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as Ec
 
@@ -28,7 +30,16 @@ class BasePage:
         except (NoSuchElementException, TimeoutError):
             raise "{}".format('元素不可点击')
 
-    def send_keys(self, location: str, value) -> None:
+    def find_element(self,locator,timeout=10) -> WebElement:
+        wait = WebDriverWait(driver=self.driver, timeout=timeout)
+        try:
+            ele=wait.until(Ec.presence_of_element_located(locator))
+        except (TimeoutError, NoSuchElementException) as e:
+            # self.logger()
+            raise e
+        else:
+            return ele
+    def send_keys(self, location, value) -> None:
         """
         input the value to input box of element
         :param by: xpath, id, name, class with str
@@ -37,7 +48,7 @@ class BasePage:
         :return: None
         """
         try:
-            element = self.wait_element(location)
+            element = self.find_element(location)
             element.clear()
             element.send_keys(value)
         except (NoSuchElementException, TimeoutException) as e:
@@ -46,7 +57,7 @@ class BasePage:
             raise e
 
     def get_element_text(self, locator):
-        ele = self.wait_element(locator)
+        ele = self.find_element(locator)
         try:
             value = ele.text
         except AttributeError:
@@ -64,3 +75,7 @@ class BasePage:
     #     img_path = self.c_dir.create_dir(ERROR_IMG_DIR)
     #     filename = img_path + '/' + current_time + info + '.png'
     #     return self.driver.save_screenshot(filename)
+
+
+if __name__ == '__main__':
+    pass

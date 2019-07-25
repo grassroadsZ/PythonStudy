@@ -24,9 +24,13 @@ class Login(BasePage):
     url = 'http://120.78.128.25:8765/Index/login.html'
 
     def login(self, phone: str, password: str):
+        self.logger.info(f'打开网址：{self.url} 登陆')
         self.visit_url(self.url)
+        self.logger.info(f'输入用户手机号：{phone}')
         self.input_user(phone)
+        self.logger.info(f'输入用户密码：{password}')
         self.input_password(password)
+        self.logger.info(f'点击登陆')
         self.click_login()
 
     def input_user(self, phone):
@@ -42,6 +46,7 @@ class Login(BasePage):
     def get_login_success_info(self):
         value = self.get_element_text(self.login_success_info)
         return value
+
 
 if __name__ == '__main__':
     pass

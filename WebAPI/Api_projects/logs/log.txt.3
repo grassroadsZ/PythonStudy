@@ -1,0 +1,144 @@
+2019-06-11 22:26:03,196 - [INFO] -test_01_register - case_log - [日志信息]: *****************测试注册开始*****************
+2019-06-11 22:26:03,317 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:05,856 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-完整,Pass
+
+2019-06-11 22:26:06,236 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:07,404 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号为空,Pass
+
+2019-06-11 22:26:07,744 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:08,916 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-密码为空,Pass
+
+2019-06-11 22:26:22,603 - [INFO] -test_01_register - case_log - [日志信息]: *****************测试注册开始*****************
+2019-06-11 22:26:22,767 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:24,300 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-完整不通过,原因是'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != '{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}'
+- {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+?           ^           ^^^                     ^^^^
++ {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+?           ^         ++  ^                     ^^^^^^^^^
+ : 成功注册-完整
+
+2019-06-11 22:26:24,708 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:25,755 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号为空,Pass
+
+2019-06-11 22:26:26,216 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:26,846 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-密码为空,Pass
+
+2019-06-11 22:26:27,228 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:27,797 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号密码都为空,Pass
+
+2019-06-11 22:26:28,176 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:28,768 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-注册名为空不通过,原因是'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != '{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}'
+- {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+?           ^           ^^^                     ^^^^
++ {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+?           ^         ++  ^                     ^^^^^^^^^
+ : 成功注册-注册名为空
+
+2019-06-11 22:26:29,241 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:29,811 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-无注册名字段,Pass
+
+2019-06-11 22:26:30,283 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:31,597 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-密码5位,Pass
+
+2019-06-11 22:26:32,052 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:34,505 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-密码6位,Pass
+
+2019-06-11 22:26:34,944 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:35,935 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-密码18位,Pass
+
+2019-06-11 22:26:36,337 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:37,130 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-密码19位,Pass
+
+2019-06-11 22:26:37,563 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:38,713 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号为字母加数字,Pass
+
+2019-06-11 22:26:39,177 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:41,112 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号为字母,Pass
+
+2019-06-11 22:26:41,577 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-11 22:26:43,165 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号已注册,Pass
+
+2019-06-11 22:26:43,589 - [INFO] -test_01_register - case_log - [日志信息]: *****************测试注册结束*****************
+2019-06-11 22:26:43,607 - [INFO] -test_02_login - case_log - [日志信息]: *****************测试登陆开始*****************
+2019-06-11 22:26:43,636 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:43,951 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆成功-完整,Pass
+
+2019-06-11 22:26:44,407 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:45,115 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-手机号为空,Pass
+
+2019-06-11 22:26:45,541 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:47,083 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-密码为空,Pass
+
+2019-06-11 22:26:47,525 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:48,109 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-手机号密码都为空,Pass
+
+2019-06-11 22:26:48,508 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:49,003 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-多传注册名不通过,原因是'{"status":0}' != '{"status":1,"code":"10001","data":null,"msg":"登录成功"}'
+- {"status":0}
++ {"status":1,"code":"10001","data":null,"msg":"登录成功"}
+ : 登陆失败-多传注册名
+
+2019-06-11 22:26:49,446 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:50,352 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-密码5位,Pass
+
+2019-06-11 22:26:50,808 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:51,238 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-手机号为字母加数字,Pass
+
+2019-06-11 22:26:51,563 - [INFO] -test_02_login - case_log - [日志信息]: 
+测试用例名称是test_login
+2019-06-11 22:26:52,051 - [ERROR] -test_02_login - case_log - [日志信息]: 登陆失败-手机号为字母,Pass
+
+2019-06-11 22:26:52,367 - [INFO] -test_02_login - case_log - [日志信息]: *****************测试登陆结束*****************
+2019-06-11 22:26:52,513 - [INFO] -test_03_recharge - case_log - [日志信息]: *****************测试充值开始*****************
+2019-06-11 22:26:52,911 - [INFO] -test_03_recharge - case_log - [日志信息]: 投资人登陆,Pass
+
+2019-06-11 22:26:54,088 - [INFO] -test_03_recharge - case_log - [日志信息]: 投资人登陆充值,Pass
+
+2019-06-11 22:26:55,126 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值成功-充值金额大于0,Pass
+
+2019-06-11 22:26:56,142 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值成功-充值金额为500000,Pass
+
+2019-06-11 22:26:57,345 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值成功-充值金额精度等于2,Pass
+
+2019-06-11 22:26:58,453 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-充值金额缺失,Pass
+
+2019-06-11 22:27:00,313 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-手机号缺失,Pass
+
+2019-06-11 22:27:08,477 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-充值金额类型非double,Pass
+
+2019-06-11 22:27:09,958 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-手机号类型非string,Pass
+
+2019-06-11 22:27:11,157 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-充值金额小于0,Pass
+
+2019-06-11 22:27:12,236 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-充值金额等于0,Pass
+
+2019-06-11 22:27:13,514 - [INFO] -test_03_recharge - case_log - [日志信息]: 充值失败-充值金额大于500000,Pass
+
+2019-06-12 07:30:00,927 - [INFO] -test_01_register - case_log - [日志信息]: *****************测试注册开始*****************
+2019-06-12 07:30:01,070 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-12 07:30:01,891 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-完整,Pass
+
+2019-06-12 07:30:02,238 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-12 07:30:02,536 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号为空,Pass
+
+2019-06-12 07:30:02,855 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-12 07:30:03,414 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-密码为空,Pass
+
+2019-06-12 07:30:03,668 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-12 07:30:04,085 - [ERROR] -test_01_register - case_log - [日志信息]: 注册失败-手机号密码都为空,Pass
+
+2019-06-12 07:30:04,394 - [INFO] -test_01_register - case_log - [日志信息]: 测试用例名称是test_register
+2019-06-12 07:30:04,868 - [ERROR] -test_01_register - case_log - [日志信息]: 成功注册-注册名为空不通过,原因是'{"status":1,"code":"10001","data":null,"msg":"注册成功"}' != '{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}'
+- {"status":1,"code":"10001","data":null,"msg":"注册成功"}
+?           ^           ^^^                     ^^^^
++ {"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+?           ^         ++  ^                     ^^^^^^^^^
+ : 成功注册-注册名为空
+

@@ -1,5 +1,5 @@
 """
--*-conding: utf-8
+-*-encoding: utf-8
 @Time:2019-07-18 15:36
 @Auther:grassroadsZ
 @File:base.py

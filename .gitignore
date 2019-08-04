@@ -1,0 +1,12 @@
+##----------idea----------
+
+*.iml
+
+.idea/
+
+*.ipr
+
+*.iws
+
+App/Lib/
+App/Scripts/

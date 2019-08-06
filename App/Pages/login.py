@@ -25,7 +25,7 @@ class Login(AppBase):
 
     def login(self):
         time.sleep(3)
-        self.swipe_screen(num=4)
+        self.swipe_screen(num=3)
         self.click(self.start)
         self.click(self.me)
         self.input(self.phone, value=right_info['phone'])

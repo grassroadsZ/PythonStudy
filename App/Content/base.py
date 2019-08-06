@@ -49,7 +49,7 @@ class AppBase:
 
         if direction == 'left':
             for _ in range(num):
-                self.driver.swipe(widht_end, hight_start, widht_start, hight_start)
+                self.driver.swipe(widht_end, hight_start, widht_start, hight_start,duration=300)
                 time.sleep(timeout)
 
         elif direction == 'right':

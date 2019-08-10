@@ -1,0 +1,104 @@
+2019-06-20 09:09:49,013 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送成功-IP地址非String类型,Pass
+
+2019-06-20 09:09:49,092 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:49,208 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-IP地址为空,Pass
+
+2019-06-20 09:09:49,279 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:49,393 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-IP地址参数缺失,Pass
+
+2019-06-20 09:09:49,462 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:49,592 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-短信模板参数缺失,Pass
+
+2019-06-20 09:09:49,660 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:49,732 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码参数缺失,Pass
+
+2019-06-20 09:09:49,806 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:49,866 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码为空,Pass
+
+2019-06-20 09:09:49,931 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:50,000 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码非11位,Pass
+
+2019-06-20 09:09:50,067 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:50,171 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-短信模板为空,Pass
+
+2019-06-20 09:09:50,250 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:50,350 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-短信模板不为1,Pass
+
+2019-06-20 09:09:50,417 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:50,591 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送成功-短信模板非String类型不通过,原因是{'faultcode': 'soap:Server', 'faultstring': '短信模板配置错误'} != {'retCode': 0, 'retInfo': ok}
+- {'faultcode': 'soap:Server', 'faultstring': '短信模板配置错误'}
++ {'retCode': 0, 'retInfo': ok} : 发送成功-短信模板非String类型
+
+2019-06-20 09:09:50,658 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-06-20 09:09:50,839 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码非String类型不通过,原因是{'faultcode': 'soap:Server', 'faultstring': '手机号码错误'} != {'retCode': 0, 'retInfo': ok}
+- {'faultcode': 'soap:Server', 'faultstring': '手机号码错误'}
++ {'retCode': 0, 'retInfo': ok} : 发送失败-手机号码非String类型
+
+2019-06-20 09:09:50,905 - [INFO] -test_01_SendCode - case_log - [日志信息]: ***************测试发送验证码结束****************
+2019-06-20 09:09:50,908 - [INFO] -test_02_userRegister - case_log - [日志信息]: *****************测试注册开始*****************
+2019-06-20 09:09:51,016 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:51,238 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 获取验证码成功-所有参数正确,Pass
+
+2019-06-20 09:09:51,317 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:51,717 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册成功-所有参数正确,Pass
+
+2019-06-20 09:09:51,785 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:51,937 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-验证码缺失,Pass
+
+2019-06-20 09:09:52,005 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:52,145 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-用户名缺失,Pass
+
+2019-06-20 09:09:52,212 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:52,355 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-注册渠道缺失,Pass
+
+2019-06-20 09:09:52,422 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:52,556 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-密码缺失,Pass
+
+2019-06-20 09:09:52,623 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:52,762 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-手机号缺失,Pass
+
+2019-06-20 09:09:52,829 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:52,965 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-IP地址缺失,Pass
+
+2019-06-20 09:09:53,043 - [INFO] -test_02_userRegister - case_log - [日志信息]: 
+测试用例名称是test_userRegister
+2019-06-20 09:09:53,174 - [ERROR] -test_02_userRegister - case_log - [日志信息]: 注册失败-验证码为空,Pass
+
+2019-08-06 17:28:59,059 - [INFO] -test_01_SendCode - case_log - [日志信息]: ***************测试发送验证码开始****************
+2019-08-06 17:28:59,138 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:28:59,559 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送成功-所有参数正确,Pass
+
+2019-08-06 17:28:59,639 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:28:59,858 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送成功-IP地址非String类型,Pass
+
+2019-08-06 17:28:59,932 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:29:00,059 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-IP地址为空,Pass
+
+2019-08-06 17:29:00,138 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:29:00,267 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-IP地址参数缺失,Pass
+
+2019-08-06 17:29:00,364 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:29:00,524 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-短信模板参数缺失,Pass
+
+2019-08-06 17:29:00,600 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:29:00,674 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码参数缺失,Pass
+
+2019-08-06 17:29:00,753 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:29:00,829 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码为空,Pass
+
+2019-08-06 17:29:00,915 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:29:01,007 - [ERROR] -test_01_SendCode - case_log - [日志信息]: 发送失败-手机号码非11位,Pass
+
+2019-08-06 17:29:01,102 - [INFO] -test_01_SendCode - case_log - [日志信息]: 测试用例名称是test_send_code
+2019-08-06 17:35:00,379 - [INFO] -handle_log - case_log - [日志信息]: msg
+2019-08-06 17:35:00,383 - [DEBUG] -handle_log - case_log - [日志信息]: debug
+2019-08-06 17:35:00,386 - [WARNING] -handle_log - case_log - [日志信息]: warn
+2019-08-06 17:35:00,390 - [ERROR] -handle_log - case_log - [日志信息]: error
